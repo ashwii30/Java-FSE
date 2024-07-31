@@ -1,0 +1,23 @@
+Analysis for Exercise 2: E-commerce Platform Search Function
+Time Complexity Comparison
+Linear Search:
+
+Time Complexity: O(n)
+Explanation: Linear search involves checking each element in the array one by one until the target is found or the end of the array is reached. Therefore, the time taken grows linearly with the number of elements in the array.
+Binary Search:
+
+Time Complexity: O(log n)
+Explanation: Binary search works on a sorted array by repeatedly dividing the search interval in half. The search space is halved with each comparison, leading to logarithmic time complexity.
+Suitability for the Platform
+Binary Search:
+
+Suitable When: The list of products is sorted or can be sorted. It provides faster search operations with O(log n) complexity, making it more efficient for large datasets.
+Advantages: Faster search times for large datasets compared to linear search. Once the list is sorted, binary search can quickly find the target element.
+Linear Search:
+
+Suitable When: The list is unsorted or if sorting is not feasible due to constant changes in data. It is simple to implement and does not require the data to be sorted.
+Advantages: No preprocessing required. Suitable for small datasets or cases where the dataset changes frequently and sorting is not practical.
+Conclusion:
+
+Binary Search is generally preferred for large, sorted datasets due to its logarithmic time complexity, making it more efficient than linear search for large numbers of elements.
+Linear Search is more suitable for unsorted or frequently changing data where sorting is not practical or where simplicity is desired.

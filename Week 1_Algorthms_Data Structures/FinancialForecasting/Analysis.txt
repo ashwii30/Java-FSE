@@ -1,0 +1,30 @@
+Analysis for Exercise 7: Financial Forecasting
+Time Complexity of Recursive Algorithm
+Recursive Algorithm (Example: Fibonacci Sequence):
+Time Complexity: O(2^n) for naive recursive implementation
+Explanation: For each call, the algorithm makes two recursive calls, leading to an exponential growth in the number of function calls. This results in a time complexity of O(2^n) due to the repeated calculations of the same subproblems.
+Optimization Techniques for Recursive Solutions
+Memoization:
+
+Description: Store the results of expensive function calls and reuse them when the same inputs occur again. This technique avoids redundant calculations and reduces time complexity to O(n).
+Implementation: Use a data structure like a hash table or an array to store previously computed results.
+
+def fibonacci(n, memo={}):
+    if n in memo:
+        return memo[n]
+    if n <= 1:
+        return n
+    memo[n] = fibonacci(n-1, memo) + fibonacci(n-2, memo)
+    return memo[n]
+
+Description: Use iterative approaches to build up solutions to subproblems and store them. This avoids the overhead of recursive calls and typically results in a time complexity of O(n) for problems that can be solved with dynamic programming.
+Implementation: Create an array or table to store results of subproblems and use it to build up the final solution.
+
+def fibonacci(n):
+    if n <= 1:
+        return n
+    dp = [0] * (n+1)
+    dp[1] = 1
+    for i in range(2, n+1):
+        dp[i] = dp[i-1] + dp[i-2]
+    return dp[n]

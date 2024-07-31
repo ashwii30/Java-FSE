@@ -1,0 +1,32 @@
+Analysis for Exercise 5: Task Management System
+Time Complexity Analysis
+Add Operation:
+
+Time Complexity: O(1)
+Explanation: Adding a task to a singly linked list can be done in constant time if adding at the head or tail of the list. If inserting in the middle, it involves traversal to the insertion point, which is O(n).
+Search Operation:
+
+Time Complexity: O(n)
+Explanation: Searching for a task requires traversing the linked list from the head to find the task, resulting in linear time complexity.
+Traverse Operation:
+
+Time Complexity: O(n)
+Explanation: Traversing the entire linked list involves visiting each node once, which is linear in relation to the number of nodes.
+Delete Operation:
+
+Time Complexity: O(n)
+Explanation: Deleting a task involves finding the task and adjusting the links of neighboring nodes. If the list is not sorted, finding the task requires traversal, resulting in linear time complexity. The deletion itself is O(1) once the task is found.
+Advantages of Linked Lists Over Arrays for Dynamic Data
+Dynamic Size:
+
+Advantage: Linked lists can grow or shrink dynamically. This flexibility eliminates the need for resizing and reallocating memory, unlike arrays with fixed sizes.
+Efficient Insertions/Deletions:
+
+Advantage: Insertions and deletions in a linked list can be done efficiently at the head or tail with O(1) complexity, or in the middle with O(n) complexity (finding the position). In contrast, arrays require O(n) time for insertions and deletions due to element shifting.
+Memory Utilization:
+
+Advantage: Linked lists use memory for nodes and pointers, which can be more efficient when the number of elements varies. Arrays may waste memory if over-provisioned or require costly resizing operations if under-provisioned.
+No Resizing Overhead:
+
+Advantage: Linked lists do not require resizing or copying of elements, unlike dynamic arrays where resizing can be expensive.
+Summary

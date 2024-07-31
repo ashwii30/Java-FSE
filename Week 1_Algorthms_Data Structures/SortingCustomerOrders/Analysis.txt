@@ -1,0 +1,29 @@
+Analysis for Exercise 3: Sorting Customer Orders
+Time Complexity Comparison
+Bubble Sort:
+
+Time Complexity:
+Average Case: O(n²)
+Best Case: O(n) (when the array is already sorted)
+Worst Case: O(n²)
+Explanation: Bubble Sort repeatedly compares adjacent elements and swaps them if they are in the wrong order. This results in a quadratic time complexity for most cases, making it inefficient for large datasets.
+Quick Sort:
+
+Time Complexity:
+Average Case: O(n log n)
+Best Case: O(n log n)
+Worst Case: O(n²) (when the pivot selection is poor)
+Explanation: Quick Sort works by partitioning the array into smaller sub-arrays based on a pivot element and then recursively sorting the sub-arrays. This partitioning and recursion lead to an average-case time complexity of O(n log n), which is much faster than Bubble Sort for large datasets.
+Why Quick Sort is Generally Preferred Over Bubble Sort
+Efficiency:
+
+Quick Sort: With an average-case time complexity of O(n log n), Quick Sort is significantly faster than Bubble Sort's O(n²) time complexity, especially for large datasets. This makes Quick Sort more efficient for most practical applications.
+Scalability:
+
+Quick Sort: Performs well with large arrays and is widely used in practice due to its average-case efficiency. It can handle large datasets more effectively compared to Bubble Sort.
+Bubble Sort Limitations:
+
+Bubble Sort: Its quadratic time complexity makes it impractical for large datasets. It also does not offer significant advantages over more advanced sorting algorithms in terms of efficiency.
+Pivot Optimization:
+
+Quick Sort: Can be optimized with good pivot selection strategies, like choosing the median of three or using random pivots to reduce the likelihood of encountering the worst-case scenario.

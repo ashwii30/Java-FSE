@@ -1,0 +1,30 @@
+Analysis for Exercise 6: Library Management System
+Time Complexity Comparison
+Linear Search:
+
+Time Complexity:
+Average Case: O(n)
+Best Case: O(1) (when the target is the first element)
+Worst Case: O(n) (when the target is the last element or not in the array)
+Explanation: Linear search involves checking each element one by one until the target is found or the end of the list is reached. Time complexity grows linearly with the number of elements.
+Binary Search:
+
+Time Complexity:
+Average Case: O(log n)
+Best Case: O(1) (when the target is the middle element)
+Worst Case: O(log n) (when the target is not found or at the ends)
+Explanation: Binary search requires a sorted array. It works by repeatedly dividing the search interval in half. Each comparison reduces the search space exponentially, resulting in logarithmic time complexity.
+When to Use Each Algorithm
+Linear Search:
+
+Use When: The dataset is unsorted or when the list is small. Linear search is simple and does not require sorting.
+Advantages: Simple to implement and does not require pre-sorting. Suitable for small or unsorted datasets.
+Disadvantages: Inefficient for large datasets due to its linear time complexity.
+Binary Search:
+
+Use When: The dataset is large and sorted. Binary search is ideal for efficiently finding elements in a sorted list.
+Advantages: Much faster for large datasets due to its logarithmic time complexity. Requires sorting of the dataset initially.
+Disadvantages: Not suitable for unsorted data unless the data is sorted first. Sorting can add overhead.
+
+Linear Search is suitable for small or unsorted datasets where simplicity is preferred, or when sorting is not feasible. Its O(n) time complexity can become impractical for large datasets.
+Binary Search is preferred for large, sorted datasets due to its O(log n) time complexity. It is more efficient but requires the data to be sorted first.

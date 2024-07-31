@@ -1,0 +1,32 @@
+Analysis for Exercise 4: Employee Management System
+Time Complexity Analysis
+Add Operation:
+
+Time Complexity: O(1) (if there is space available in the array)
+Explanation: Adding an employee to the end of the array is done in constant time, provided there is space in the array. If the array is full, resizing and copying the elements would take O(n) time.
+Search Operation:
+
+Time Complexity: O(n)
+Explanation: Searching for an employee in an unsorted array requires checking each element until the target is found or the end of the array is reached. This results in linear time complexity.
+Traverse Operation:
+
+Time Complexity: O(n)
+Explanation: Traversing the array involves visiting each element once, which is linear in relation to the number of elements in the array.
+Delete Operation:
+
+Time Complexity: O(n)
+Explanation: Deleting an element involves finding the element and then shifting the subsequent elements to fill the gap, resulting in linear time complexity. If the array is unsorted, the search itself is O(n), making the combined operation O(n) as well.
+Limitations of Arrays and When to Use Them
+Fixed Size:
+
+Arrays have a fixed size, which means once created, the size cannot be changed. This can lead to inefficient memory use if the array is too large or too small.
+Resizing Overhead:
+
+If you need to resize an array (e.g., in dynamic array implementations), it requires creating a new array and copying the elements, which is an O(n) operation.
+Deletion and Insertion Costs:
+
+Inserting or deleting elements in the middle of an array requires shifting elements, which can be costly in terms of time complexity (O(n)).
+Use Cases:
+
+When to Use Arrays: Arrays are suitable when you have a fixed number of elements or when you need fast access to elements by index. They are efficient for scenarios where the size is known and operations are primarily index-based.
+When to Avoid Arrays: For scenarios where the number of elements varies or frequent insertions and deletions are required, other data structures like linked lists or dynamic arrays may be more appropriate.

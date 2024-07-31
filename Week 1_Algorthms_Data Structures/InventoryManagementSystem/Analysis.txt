@@ -1,0 +1,24 @@
+Analysis for Exercise 1: Inventory Management System
+Data Structure Used: HashMap
+
+Add Operation:
+
+Time Complexity: O(1) on average. Adding a new product involves computing a hash code and placing the product in the corresponding bucket, which is typically done in constant time.
+Optimization: Use a good hash function to minimize collisions. Ensure the capacity of the hash table is sufficient to reduce the likelihood of resizing operations.
+Update Operation:
+
+Time Complexity: O(1) on average. Updating a product involves locating the product using its key (hash code) and then updating its attributes. This is done in constant time if the hash code is efficient and the data structure is well-maintained.
+Optimization: Maintain a good load factor to avoid frequent rehashing. Rehash the table when the load factor exceeds a certain threshold to keep operations efficient.
+Delete Operation:
+
+Time Complexity: O(1) on average. Deleting a product involves locating it using its key and removing it from the hash table. This is done in constant time if the hash function is effective and there are minimal collisions.
+Optimization: Ensure proper handling of collisions and removal from the hash table. A good hash function and resizing strategy help maintain performance.
+Discussion:
+
+HashMap Efficiency: The average time complexity of O(1) for add, update, and delete operations makes HashMap efficient for these tasks. However, the worst-case time complexity can degrade to O(n) if there are many collisions, which is why using a good hash function and maintaining an appropriate load factor are crucial.
+
+Optimizations:
+
+Hash Function: A well-designed hash function minimizes collisions and ensures even distribution of entries across the buckets.
+Load Factor and Resizing: Adjust the load factor to balance between memory usage and performance. Resizing the hash table when it becomes too full helps maintain efficient operations.
+Collision Handling: Use techniques like chaining (linked lists) or open addressing to handle collisions effectively.
