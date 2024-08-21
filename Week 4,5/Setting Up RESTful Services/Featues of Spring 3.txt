@@ -1,0 +1,29 @@
+1. Java 17+ Baseline:
+   - Spring Boot 3 requires Java 17 or higher, leveraging modern Java language features and performance improvements.
+
+2. Jakarta EE 9:
+   - Transition from `javax.*` to `jakarta.*` package namespaces, aligning with Jakarta EE 9, which may require code updates when migrating from Spring Boot 2.x.
+
+3. AOT (Ahead-of-Time) Compilation:
+   - Spring Boot 3 introduces support for AOT compilation, which helps reduce startup time and memory footprint, especially beneficial for native images with GraalVM.
+
+4. GraalVM Native Image Support:
+   - Enhanced support for building native images using GraalVM, allowing Spring Boot applications to run with minimal memory usage and faster startup times.
+
+5. Enhanced Observability:
+   - Improved observability features, including support for Micrometer’s tracing API and improved metrics collection for better monitoring and diagnostics.
+
+6. HTTP Interface Client:
+   - Introduction of HTTP interface clients, which allow developers to define HTTP clients as interfaces, reducing boilerplate code and simplifying HTTP client usage.
+
+7. Improved Docker Support:
+   - Enhanced Docker support with built-in layered JARs and improved image building capabilities using Paketo Buildpacks.
+
+8. Security Improvements:
+   - Security improvements, including better OAuth2 support, more flexible authorization configurations, and improvements in CSRF protection.
+
+9. Kotlin Coroutines Support:
+   - Expanded support for Kotlin Coroutines, making it easier to build reactive and asynchronous applications with Kotlin.
+
+10. New Configuration Properties:
+    - Introduction of new configuration properties for fine-tuning various aspects of the Spring Boot application, such as auto-configuration, data sources, and security.
